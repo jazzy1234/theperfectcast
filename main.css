@@ -1,3 +1,94 @@
 body {
+	background:white;
+	font-family: arial;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+.navbarlogo {
+	float: left;
+	color: silver;
+	
+}
+
+#rcorners1 {
+	border-style: inset;
+
+}
+
+header {
 	background: grey;
 }
+
+header::after {
+	content: " ";
+	display:table;
+	clear: both;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 12px; 
+	font-size: 26px;
+
+	position: relative;
+}
+
+nav a {
+	color: silver;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: green;
+}
+
+nav a::before {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: green;
+
+	position: absolute;
+	top: 0;
+
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
