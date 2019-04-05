@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
 	background:white;
 	font-family: arial;
 }
@@ -92,3 +93,7 @@ nav a:hover::before {
 
 
 
+=======
+	background: #999;
+}
+>>>>>>> master
