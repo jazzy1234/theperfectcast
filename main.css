@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
 	background:white;
 	font-family: arial;
 }
@@ -73,27 +72,3 @@ nav a::before {
 nav a:hover::before {
 	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-	background: #999;
-}
->>>>>>> master
