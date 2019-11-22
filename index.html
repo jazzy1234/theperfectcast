@@ -42,8 +42,20 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="page2.html">About</a></li>
-						<li><a href="page3.html">Links</a></li>
+						<li><a href="contentpage.html">Content</a></li>
+						<li><a href="aboutpage.html">About</a></li>
+						<li><a href="linkspage.html">Links</a></li>
+						<li><a href="https://www.youtube.com/user/Twizz23"
+								target="_blank">
+									<img src="media.ico" alt="YouTube" style="width:35px;height:35px;">
+							</a>
+						</li>
+						<li><a href="https://soundcloud.com/theperfectcast"
+								target="_blank">
+									<img src="soundcloud_logo2.png" alt="Soundcloud" style="width:35px;height:35px;" 
+										border="0" style="display: block; margin-left: auto; margin-right: auto;">
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -132,38 +144,10 @@
 		</script>
 
 		<div>
-			<audio src="" controls id="audioPlayer"></audio>
-			<ul id="playlist">
-				<li class="current-song"><a href="THE PERFECT CAST EP6!.mp3">Ep. 6</a></li>
-			</ul>
-			<script src="https://code.jquery.com/jquery-2.2.0.js">				
-			</script>
-			<script>
-				audioPlayer();
-				function audioPlayer(){
-					var currentSong = 0;
-					$("#audioPlayer")[0].src = $("#playlist li a")[0];
-					$("#audioPlayer")[0].play();
-					$("#playlist li a").click(function(e){
-						e.preventDefault();
-						$("#audioPlayer")[0].src = this;
-						$("#audioPlayer")[0].play();
-						$("#playlist li").removeClass("current-song");
-						 currentSong = $(this).parent()	.index();
-						 $(this).parent.addClass("current-song");
-					});
-
-					$("#audioPlayer")[0].addEventListener("ended", function(){
-						currentSong++;
-						if(currentSong == $("#playlist li a").length)
-							currentSong = 0;
-						$("#playlist li").removeClass("current-song");
-						$("#playlist li:eq("+currentSong+")").addClass("current-song");
-						$("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-						$("#audioPlayer")[0].play(); 
-					})
-				}
-			</script>
+			<!-- Latest episode to play on main page-->
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/713323054&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			
+			
 		</div>
 
 		<!-- Flexbox containers with content -->
